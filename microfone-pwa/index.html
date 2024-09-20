@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#317EFB"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  
+  <title>Gravador de Voz</title>
+</head>
+<body>
+  <h1>Gravador de Voz</h1>
+  <div class="form-voz">   
+  <button id="start-record">Iniciar Gravação</button>
+  <button id="stop-record" disabled>Parar Gravação</button>
+  <audio id="audio-playback" controls></audio>
+</div> 
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(error) {
+                console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+    }
+</script>    
+</body>
+</html>

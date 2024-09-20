@@ -1,0 +1,22 @@
+{
+  "name": "Gravador de Voz",
+  "short_name": "Gravador",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2c3e50",
+  "description": "Uma aplicação para gravar áudio facilmente.",
+  "orientation": "portrait",  
+  "icons": [
+    {
+      "src": "/icons/microfone-dourado.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/icons/microfone-dourado512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ]
+}
